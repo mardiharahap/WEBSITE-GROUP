@@ -1,0 +1,185 @@
+:root{
+    --maincolor:#c4c9cd;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: .2s;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    background-color: crimson;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header #logo{
+    
+    font-size: 5rem;
+    color: white;
+}
+
+.navbar a{
+    color: white;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.navbar a:hover{
+    background-color:white;
+    color: crimson;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+}
+
+.icons div{
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.icons div:hover{
+    background-color: white;
+    color: crimson;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+}
+
+#menu-bar{
+    display:none;
+}
+.search-box.active{
+    left: 40%;
+}
+.search-box{
+    position: absolute;
+    top: 110%;
+    left: 100%;
+    width: 50%;
+    right: 2rem;
+}
+.search-box input{
+    padding: 1.5rem 2rem;
+    width: 100%;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.navbar.active{
+    left: 0%;
+}
+.content{    
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 20rem;
+    padding: 10px;
+}
+
+.content h4{
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+.box{
+    width: 70%;
+    height: auto;
+}
+.box h5{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box img{
+    height: auto;
+    width: 100%;
+}
+
+.box p{
+    font-size: 15px;
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+    padding: 10px;
+    text-transform: none;
+}
+
+.box .btn{
+    margin-top: 10%;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 20px;
+    align-items: right;
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    text-align: left;
+    color: black;
+
+}
+.box .btn:hover{
+    color: white;
+    background-color: crimson;
+}
+.box ul li{
+    font-size: 15px;
+    margin: 10px;
+}
+.box h5{
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    #menu-bar{
+        display: inline-block;
+    }
+    .header{
+        padding: 2rem;
+    }
+    .navbar{
+        position:absolute;
+        top: 100%;
+        width: 50rem;
+        background: lightpink;
+        height: 100vh;
+        left: 100%;
+    }
+    .navbar a{
+        display: block;
+        color: white;
+        background: crimson;
+        margin: 3rem;
+        padding: 1.5rem;
+        border-radius: 15px;
+        width: 45rem;
+    }
+}
